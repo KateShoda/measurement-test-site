@@ -1,0 +1,59 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #222;
+}
+
+form input {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 320px;
+}
+
+form button {
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+}
+
+.utm-debug {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f5f5f7;
+    border-radius: 8px;
+}
+
+.utm-debug h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.utm-debug table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+}
+
+.utm-debug td {
+    padding: 0.3rem 0.75rem;
+    border-bottom: 1px solid #ddd;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.9rem;
+}
+
+.utm-debug td:first-child {
+    color: #666;
+    width: 140px;
+}
+
+.utm-debug ul {
+    padding-left: 1.2rem;
+}
+
+.utm-debug a {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.9rem;
+}

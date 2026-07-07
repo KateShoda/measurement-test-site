@@ -10,6 +10,15 @@
     <script>
     (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343259177"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
     </script>
+
+    <!-- Google Analytics 4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKTL3DBDYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XKTL3DBDYS');
+    </script>
 </head>
 
 <body>
@@ -26,6 +35,23 @@
         Submit Lead
     </button>
 </form>
+
+<!-- UTM debug panel + quick test links -->
+<section id="utmDebug" class="utm-debug">
+    <h2>UTM parameters on this page load</h2>
+    <table id="utmTable">
+        <tbody></tbody>
+    </table>
+
+    <h2>Quick test URLs (Microsoft Ads auto-tagging variants)</h2>
+    <ul id="utmTests">
+        <li><a href="?utm_source=bing&utm_medium=cpc&utm_campaign=test_search">Search &rarr; bing / cpc</a></li>
+        <li><a href="?utm_source=msads&utm_medium=cpm&utm_campaign=test_display">Audience Ads &rarr; msads / cpm</a></li>
+        <li><a href="?utm_source=msads&utm_medium=cpc&utm_campaign=shopping_test">Shopping &rarr; msads / cpc / shopping</a></li>
+        <li><a href="?utm_source=bing_video&utm_medium=cpc&utm_campaign=test_video">Video &rarr; bing_video / cpc</a></li>
+        <li><a href="?utm_source=msads&utm_campaign=cross-network">Performance Max &rarr; msads / cross-network</a></li>
+    </ul>
+</section>
 
 <script src="script.js"></script>
 

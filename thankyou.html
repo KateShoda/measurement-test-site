@@ -9,6 +9,15 @@
     <script>
     (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"343259177"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
     </script>
+
+    <!-- Google Analytics 4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKTL3DBDYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XKTL3DBDYS');
+    </script>
 </head>
 
 <body>
@@ -19,11 +28,20 @@
 
 <!-- Fire conversion event -->
 <script>
+    // Microsoft Ads UET conversion event
     window.uetq = window.uetq || [];
     window.uetq.push('event', 'submit_lead', {
         'event_category': 'lead',
         'event_label': 'form_submit'
     });
+
+    // GA4 conversion event
+    if (typeof gtag === 'function') {
+        gtag('event', 'submit_lead', {
+            event_category: 'lead',
+            event_label: 'form_submit'
+        });
+    }
 </script>
 
 </body>
